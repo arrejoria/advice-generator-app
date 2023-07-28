@@ -1,0 +1,32 @@
+// Primary
+// - Mobile: 375px
+// - Desktop: 1440px
+
+// Primary Colors
+$primary: #313131;
+$pale-blue: hsl(225, 100%, 94%);
+$brigh-blue: hsl(245, 75%, 52%);
+
+// Neutral Colors
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+// Typography
+$font-headings: 'Verdana', Sans-serif;
+
+// Body Copy
+$paragraph-size: 16px;
+
+$font-weight-1: 900;
+$font-weight-2: 700;
+$font-weight-3: 500;
+
+
+// Breakpoint Sass Variables
+$breakpoint-mobile: 37.5em;
+$breakpoint-desktop: 90em;
+$breakpoint-desktop-medium: 105em;
+$breakpoint-desktop-large: 120em;
+$breakpoint-desktop-xlarge: 160em;

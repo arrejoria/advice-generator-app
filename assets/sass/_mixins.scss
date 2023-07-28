@@ -1,0 +1,56 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin w-70 {
+  width: 100%;
+  max-width: 73.3333%;
+}
+@mixin w-50 {
+  width: 100%;
+  max-width: 50%;
+}
+@mixin w-30 {
+  width: 100%;
+  max-width: 33.3333%;
+}
+@mixin w-20 {
+  width: 100%;
+  max-width: 25%;
+}
+
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (min-width: $breakpoint-mobile) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}

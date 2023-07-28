@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10 PX = 1rem**/
+}
+@media only screen and (min-width: 90em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+:root > body {
+  background-image: url("../images/pattern-background-desktop.svg");
+}
+@media only screen and (min-width: 37.5em) {
+  :root > body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img,
+picture {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input[type=range] {
+  margin-block: 1.25rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 1px solid #313131;
+}
+
+/** Headings **/
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Verdana", Sans-serif;
+  margin: 0 0 5rem 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+/** Global */
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=main.css.map */
