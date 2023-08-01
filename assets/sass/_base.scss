@@ -1,28 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10 PX = 1rem**/
+  scroll-behavior: smooth;
 
   @media only screen and (min-width: $breakpoint-desktop) {
     font-size: 70%;
   }
 }
 
-:root {
-    & > body {
-      background-image: url("../images/pattern-background-desktop.svg");
-
-      @include mediaQuery(phone) {
-        background-image: url("../images/pattern-background-mobile.svg");
-      }
-    }
-}
 
 body {
-  background-color: $pale-blue;
+  background-color: $body-bg;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+}
+
+* {
+  font-family: $font-fa;
+}
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  place-items: center;
+  min-height: 100vh;
+  width: min(100vw, 1440px);
 }
 

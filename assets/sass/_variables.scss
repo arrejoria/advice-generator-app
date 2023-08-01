@@ -3,25 +3,25 @@
 // - Desktop: 1440px
 
 // Primary Colors
-$primary: #313131;
+$primary: hsl(193, 38%, 86%);
+$primary-2: hsl(150, 100%, 66%);
 $pale-blue: hsl(225, 100%, 94%);
-$brigh-blue: hsl(245, 75%, 52%);
+
+$body-bg: #eeeeee;
 
 // Neutral Colors
 
-$very-pale-blue: hsl(225, 100%, 98%);
-$desaturated-blue: hsl(224, 23%, 55%);
-$dark-blue: hsl(223, 47%, 23%);
+$grayish-blue: hsl(225, 100%, 98%);
+$dark-grayish-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(218, 23%, 16%);
 
 // Typography
-$font-headings: 'Verdana', Sans-serif;
+$font-fa: 'Manrope', sans-serif;
 
 // Body Copy
-$paragraph-size: 16px;
+$body-fz: 28px;
 
 $font-weight-1: 900;
-$font-weight-2: 700;
-$font-weight-3: 500;
 
 
 // Breakpoint Sass Variables

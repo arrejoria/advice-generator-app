@@ -5,6 +5,40 @@
 @import "sass/reset";
 @import "sass/typography";
 
-html {
-    scroll-behavior: smooth;
+.advice {
+    background-color: $dark-blue;
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+
+    &__title {
+        color: $primary-2;
+    }
+
+    &__text {
+
+        p {
+            color: $primary;
+            font-size: $body-fz;
+            font-weight: $font-weight-1;
+
+            &::before {
+                content: '"';
+            }
+            &::after{
+                content: '"';
+            }
+        }
+
+    }
+
+    &__button {
+        background-color: $primary-2;
+        border-radius: 50%;
+        display: inline-flex;
+        padding: 1.5rem;
+
+    }
+
+
 }

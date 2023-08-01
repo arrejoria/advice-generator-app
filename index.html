@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advice Generator App  | Arrejoria Lucas</title>
+    <title>Advice Generator App | Arrejoria Lucas</title>
     <meta name="title" content="Advice Generator App  - Arrejoria Lucas" />
     <meta
       name="description"
@@ -13,7 +13,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.example.com/" />
-    <meta property="og:title" content="Advice Generator App  - Arrejoria Lucas" />
+    <meta
+      property="og:title"
+      content="Advice Generator App  - Arrejoria Lucas"
+    />
     <meta
       property="og:description"
       content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT"
@@ -26,7 +29,10 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.example.com/" />
-    <meta property="twitter:title" content="Advice Generator App  - Arrejoria Lucas" />
+    <meta
+      property="twitter:title"
+      content="Advice Generator App  - Arrejoria Lucas"
+    />
     <meta
       property="twitter:description"
       content="PROYECT DESCRIPTION OR SOMETHING ELSE ABOUT IT"
@@ -41,27 +47,37 @@
       document.documentElement.classList.add("js");
     </script>
 
-    <link rel="canonical" href="https://www.example.com/page" />
-    <!-- TODO: Update canonical link -->
-
-    <link rel="icon" href="/favicon.ico" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <!-- TODO: Update web app manifest file -->
 
     <meta name="theme-color" content="#FF00FF" />
     <!-- TODO: Update meta theme color -->
 
-    <!--  -->
-    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- Reset Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/normalize.css" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/main.css" />
   </head>
   <body class="container">
-
     <!-- Main Section Starts Here  -->
-    <main class="">
+    <main class="container">
+      <div class="advice">
+        <h5 class="advice__title">Advice #117</h5>
+        <div class="advice__text">
+          <p>
+            It is easy to sit up and take notice, what's difficult is getting up
+            and taking action.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+        <button id="advBtn" class="advice__button">
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+        </button>
+      </div>
     </main>
 
     <!-- Modernizr -->
@@ -74,6 +90,6 @@
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 
     <!-- Your custom scripts -->
-    <script src="assets/js/script.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
   </body>
 </html>
