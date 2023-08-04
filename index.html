@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advice Generator App | Arrejoria Lucas</title>
+    <link rel="icon" href="favicon.webp" type="image/x-icon" />
+
     <meta name="title" content="Advice Generator App  - Arrejoria Lucas" />
     <meta
       name="description"
@@ -46,10 +48,7 @@
       document.documentElement.classList.add("js");
     </script>
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <!-- <link rel="manifest" href="site.webmanifest" /> -->
-    <meta name="theme-color" content="#FF00FF" />
+    <meta name="theme-color" content="#313c4e" />
 
     <!-- Reset Styles -->
     <link
@@ -65,7 +64,7 @@
     <main class="container">
       <div class="advice">
         <h5 class="advice__title">Advice <span id="adviceID"></span></h5>
-        <div id="adviceText" class="advice__text">
+        <div aria-label="Advice Paragraph" id="adviceText" class="advice__text">
           <p></p>
         </div>
 
@@ -80,7 +79,7 @@
           />
         </picture>
         
-        <button id="advBtn" class="advice__button">
+        <button id="advBtn" class="advice__button" aria-label="Generate Advice Button">
           <svg id="advSvg" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
@@ -90,8 +89,6 @@
         </button>
       </div>
     </main>
-
-    <!-- Polyfill for older browsers -->
 
     <!-- Your custom scripts -->
     <script src="assets/js/main.js" type="module"></script>
