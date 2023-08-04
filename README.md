@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](screenshot-desktop.webp)
-![Mobile](screenshot-mobile.webp)
+![Desktop](screenshot-desktop.png)
+![Mobile](screenshot-mobile.png)
 
 ### Links
 
