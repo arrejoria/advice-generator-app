@@ -41,7 +41,6 @@
       property="twitter:image"
       content="SCREENSHOT OR IMAGE ABOUT THE PROYECT OR APP"
     />
-
     <script>
       document.documentElement.classList.remove("no-js");
       document.documentElement.classList.add("js");
@@ -50,10 +49,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
-    <!-- TODO: Update web app manifest file -->
-
     <meta name="theme-color" content="#FF00FF" />
-    <!-- TODO: Update meta theme color -->
 
     <!-- Reset Styles -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendor/normalize.css" />
@@ -65,29 +61,20 @@
     <!-- Main Section Starts Here  -->
     <main class="container">
       <div class="advice">
-        <h5 class="advice__title">Advice #117</h5>
-        <div class="advice__text">
+        <h5 class="advice__title">Advice <span id="adviceID"></span></h5>
+        <div id="adviceText" class="advice__text">
           <p>
-            It is easy to sit up and take notice, what's difficult is getting up
-            and taking action.
           </p>
         </div>
 
         <div class="divider"></div>
-        <button id="advBtn" class="advice__button">
+        <button id="advBtn" class="advice__button" >
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
         </button>
       </div>
     </main>
 
-    <!-- Modernizr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
     <!-- Polyfill for older browsers -->
-    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
 
     <!-- Your custom scripts -->
     <script src="assets/js/main.js" type="module"></script>

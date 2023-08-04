@@ -6,13 +6,23 @@
 @import "sass/typography";
 
 .advice {
+    @include flex-column;
+    @include flex-center;
+    gap: 1rem;
+    padding: 4rem;
     background-color: $dark-blue;
+    border-radius: 15px;
+    text-align: center;
     height: auto;
     width: 100%;
     max-width: 600px;
 
     &__title {
         color: $primary-2;
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
     &__text {
@@ -21,21 +31,26 @@
             color: $primary;
             font-size: $body-fz;
             font-weight: $font-weight-1;
-
+            
             &::before {
-                content: '"';
+                content: '“';
             }
             &::after{
-                content: '"';
+                content: '”';
             }
         }
 
     }
 
+    .divider {
+        content: '"';
+        width: 100%;
+        height: 10px;
+    }
     &__button {
         background-color: $primary-2;
         border-radius: 50%;
-        display: inline-flex;
+        display: inline-flex ;
         padding: 1.5rem;
 
     }
