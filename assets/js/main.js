@@ -1,6 +1,5 @@
 console.log("JS Loaded");
 
-// Select the button and the element where the advice will be displayed
 const adviceBtn = document.querySelector("#advBtn");
 const adviceID = document.querySelector("#adviceID");
 const adviceText = document.querySelector("#adviceText p");
@@ -9,27 +8,30 @@ const adviceAPI = "https://api.adviceslip.com/advice";
 
 // Fetch advice from the API endpoint
 const fetchAdvice = () => {
+  adviceText.style.opacity = "0";
+
   fetch(adviceAPI)
     .then((response) => {
-      // Check if the response was successful (status code 200)
       if (!response.ok) {
         throw new Error(`Network error: ${response.status}`);
       }
-      // Parse the JSON response
       return response.json();
     })
     .then((data) => {
-      // Create the advice object
       const adviceData = data.slip;
-      // Display the advice on the page
       adviceID.textContent = `#${adviceData.id}`;
       adviceText.textContent = adviceData.advice;
+      adviceText.style.opacity = "1";
     })
     .catch((error) => {
-      // Handle any errors that may occur
       console.error("There was a problem with the request:", error.message);
     });
 };
-fetchAdvice()
+fetchAdvice();
 
-adviceBtn.addEventListener("click", fetchAdvice);
+adviceBtn.addEventListener("click", () => {
+  fetchAdvice();
+  adviceBtn.classList.remove("rotate-animation"); 
+  void adviceBtn.offsetWidth; 
+  adviceBtn.classList.add("rotate-animation"); 
+});

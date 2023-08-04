@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: hsl(218, 23%, 16%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -93,61 +93,38 @@ hr {
 }
 
 /** Headings **/
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Manrope", sans-serif;
-  margin: 0 0 5rem 0;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.8rem;
-}
-
-h3 {
-  font-size: 3.6rem;
-}
-
-h4 {
-  font-size: 2.4rem;
-}
-
 /** Global */
 p {
   margin: 0;
 }
 
 .advice {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   padding: 4rem;
-  background-color: hsl(218, 23%, 16%);
+  margin: 0 1rem;
+  background-color: hsl(218, 23%, 25%);
   border-radius: 15px;
   text-align: center;
   height: auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 350px;
 }
 .advice__title {
   color: hsl(150, 100%, 66%);
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .advice__text p {
   color: hsl(193, 38%, 86%);
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 800;
+  transition: opacity 1s cubic-bezier(0.48, 0.17, 0.49, 0.84);
 }
 .advice__text p::before {
   content: "“";
@@ -155,14 +132,52 @@ p {
 .advice__text p::after {
   content: "”";
 }
-.advice .divider {
-  content: '"';
-  width: 100%;
-  height: 10px;
+.advice__divider {
+  padding-bottom: 3rem;
 }
 .advice__button {
+  position: absolute;
+  bottom: -3em;
   background-color: hsl(150, 100%, 66%);
   border-radius: 50%;
   display: inline-flex;
-  padding: 1.5rem;
+  padding: 2rem;
+  transition: box-shadow 0.5s, transform 0.2s;
+  transition-timing-function: cubic-bezier(0.48, 0.17, 0.49, 0.84);
+  animation: scaleBtn 0.8s ease-in;
+}
+.advice__button.rotate-animation {
+  animation: rotateDice 0.8s ease-in;
+}
+.advice__button:hover {
+  box-shadow: 0 0 15px 5px hsl(150, 100%, 66%);
+}
+.advice__button:active {
+  transform: translateY(5px);
+}
+@keyframes rotateDice {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes scaleBtn {
+  from {
+    transform: scale(0%);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@media only screen and (min-width: 37.5em) {
+  .advice {
+    max-width: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -5,9 +5,8 @@
 // Primary Colors
 $primary: hsl(193, 38%, 86%);
 $primary-2: hsl(150, 100%, 66%);
-$pale-blue: hsl(225, 100%, 94%);
 
-$body-bg: #eeeeee;
+$body-bg: hsl(218, 23%, 16%);
 
 // Neutral Colors
 
@@ -21,7 +20,7 @@ $font-fa: 'Manrope', sans-serif;
 // Body Copy
 $body-fz: 28px;
 
-$font-weight-1: 900;
+$font-weight-1: 800;
 
 
 // Breakpoint Sass Variables
